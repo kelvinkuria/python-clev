@@ -44,10 +44,69 @@
 
 # say_my_name()
        
-def say_my_name_2(name):
-    print(name)
+#def say_my_name_2(name):
+   # print(name)
 # say_my_name_2('Kuria')
+    #multiple arguments in a functtion
+#def greeting(greet,name):
+    #print(f'{greet} {name}!')
+#greeting('aloha', 'kuria')
+
+#default arguments are passed in if said arguments are not passed in
+
+
+# def greeting(name='kush', greet = 'Hey'):
+#   print(f'{greet}, {name}!')
+
+# greeting()
+
+#take 2 integers amd returns their sum
+# def sum(a,m):
     
-def greeting(greet,name):
-    print(f'{greet} {name}!')
-greeting('aloha', 'kuria')
+#     return a + m
+
+# print(sum(1,2))
+
+#def calculateFoodTotal(food_amount, tip_percentage):
+"""Calculates the total cost of food including tip.
+
+  Args:
+      food_amount (float): The cost of the food.
+      tip_percentage (float): The tip percentage as a number (e.g., 15 for 15%).
+
+  Returns:
+      float: The total cost including tip.
+  """
+#   tip = food_amount * (tip_percentage / 100)
+#   total = food_amount + tip
+#   return f"Total cost: ${total:.2f}"  # String formatting for currency
+
+# # Example usage
+# print(calculateFoodTotal(100, 45))
+
+    
+
+
+def suggest_clothing(weather):
+  """Suggests clothing based on the weather condition.
+
+  Args:
+      weather (str): The weather condition (rain, cloudy, etc.).
+
+  Returns:
+      str: A message suggesting clothing based on weather.
+  """
+  if weather == 'rain':
+    return 'Bring an umbrella!'
+  elif weather == 'cloudy':
+    return 'No need for a coat.'
+  else:
+    return 'Dress according to the weather.'
+
+# Example usage
+weather = 'cloudy'
+clothing_suggestion = suggest_clothing(weather)
+print(clothing_suggestion)
+  
+  
+
